@@ -1,0 +1,44 @@
+/* Se define los atributos propiedades del elemento bloque h1 : título*/
+h1 {
+    outline: 1px solid yellow ;
+    text-align: center ;
+}
+
+/* Se define los atributos propiedades de la clase caja, se aplica a todos
+los elementos que contengan esta clase*/
+
+.caja {
+  /*  outline: 1px solid green ; es una ayuda visual */
+      width: 400px;
+      padding: 10px;
+      border: 1px solid #999;
+      margin: 4px;
+
+      /* Se utiliza el atributo box-sizing: border-box, para hacer respetar
+      el ancho definido , el cual incluye: padding y border, pero No margen)
+      */
+      box-sizing: border-box;
+
+      /* se utiliza float como una propiedad de posicionamiento, con la
+      finalidad de romper el esquema de bloque general ( vertical) para
+      que este bloque(s) se dispongan a la izquierda a partir del segundo
+      si hubiera más de 2*/
+      float: left;
+}
+
+/*se define los atributos del elemento inline img, se aplica a todos los
+elementos img que hubiera*/
+
+img {
+      outline: 1px solid blue ;
+
+      /*se utiliza el atributo propiedad max-width :100%, para que a la imagen
+      (es) aplicadas se visualizen a su tamaño 100% siempre */
+      max-width: 100% ;
+}
+
+/*se define los atributos del elemento bloque p , se aplica a todos los
+elementos p que hubiera*/
+p {
+      outline: 1px solid orange ;
+}
